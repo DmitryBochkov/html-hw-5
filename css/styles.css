@@ -1,0 +1,213 @@
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('../fonts/helveticaneue-thin-webfont.eot');
+  src: url('../fonts/helveticaneue-thin-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/helveticaneue-thin-webfont.woff2') format('woff2'),
+       url('../fonts/helveticaneue-thin-webfont.woff') format('woff'),
+       url('../fonts/helveticaneue-thin-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font: 14px 'Helvetica Neue';
+  background: url(../img/bg.png) center center no-repeat fixed;
+  background-size: cover;
+}
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/*HEADER*/
+header {
+  width: 100%;
+  height: 36px;
+  background: #074c89 url(../img/nav-bg.png) repeat-x;
+  color: #ffffff;
+}
+ul {
+  float: left;
+}
+ul li {
+  float: left;
+  line-height: 36px;
+}
+nav {
+  margin-left: 38%;
+  min-width: 740px;
+}
+.menu > li > a {
+  color: #60b5ed;
+  text-decoration: none;
+  padding: 8px 13px;
+}
+.menu > li > a:hover {
+  color: #ffffff;
+}
+nav img {
+  float: left;
+}
+.active {
+  width: 70px;
+  box-sizing: border-box;
+  color: #ffffff;
+  background: #4eabda;
+  font-weight: bold;
+  text-align: center;
+}
+.menu-separator {
+  padding: 2px 8px;
+}
+.personal-menu-offers img {
+  padding: 6px 10px 3px;
+}
+.personal-menu a {
+  color: #ffffff;
+}
+.personal-menu-offers a {
+  text-decoration: none;
+  padding-right: 5px;
+}
+.personal-menu-offers {
+  margin-right: 10px;
+}
+.personal-menu-offers a:hover {
+  text-decoration: underline;
+}
+.personal-menu-login {
+  background: #3c8fce url(../img/nav-login-bg.png) no-repeat;
+  height: 36px;
+  width: 191px;
+  text-align: center;
+}
+.personal-menu-login a:hover {
+  text-decoration: none;
+}
+/*MAIN*/
+main {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 36px;
+  left: 0;
+  overflow: auto;
+  white-space: nowrap;
+  text-align: center;
+  font-size: 0;
+}
+main::before {
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  content: '';
+}
+.central-block {
+  box-sizing: border-box;
+  width: 560px;
+  display: inline-block;
+  white-space: normal;
+  vertical-align: middle;
+  text-align: left;
+}
+.registration-title {
+  height: 62px;
+  line-height: 62px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.63);
+  font-size: 24px;
+  color: #ffffff;
+}
+.registration-block {
+  margin: 2px 0 0 0;
+  background: rgba(0, 0, 0, 0.63);
+  font-size: 14px;
+  color: #ffffff;
+}
+.registration-wrapper {
+  margin: 0 auto;
+  width: 276px;
+  box-sizing: border-box;
+  padding: 35px 0 0 0;
+}
+.registration-facebook a {
+  display: block;
+}
+.registration-facebook img {
+  display: block;
+  width: 276px;
+}
+.registration-block-sparator {
+  color: #999999;
+  text-align: center;
+  margin: 29px 0;
+  background: url(../img/form-separator.png) center center no-repeat;
+}
+fieldset input {
+  height: 36px;
+  line-height: 36px;
+  width: 276px;
+  box-sizing: border-box;
+  margin: 0 0 15px 0;
+  padding: 0 0 0 18px;
+  font-size: 14px;
+  color: #cccccc;
+  background: #0f0f0f;
+  border: 0;
+  border-bottom: 1px solid #494948;
+  outline: 0;
+}
+fieldset input::-webkit-input-placeholder {
+  color:#cccccc;
+  opacity: 1;
+}
+fieldset input::-moz-placeholder {
+  color:#cccccc;
+  opacity: 1;
+  }
+fieldset input:-moz-placeholder {
+  color:#cccccc;
+  opacity: 1;
+  }
+fieldset input:-ms-input-placeholder {
+  color:#cccccc;
+  opacity: 1;
+}
+fieldset input:focus {
+  background: #1b5288;
+  box-shadow: 0 0 5px 2px #5398db;
+  border-bottom: 1px solid #77a9db;
+}
+.updates {
+  margin: 3px 0 10px;
+  color: #cccccc;
+}
+input[type="submit"] {
+  background-image: url(../img/form-button.png);
+  width: 149px;
+  height: 35px;
+  display: block;
+  border: 0;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+.submit-button {
+  width: 149px;
+  margin: 25px auto 20px;
+}
+.terms {
+  width: 310px;
+  margin: 0 auto;
+  color: #cccccc;
+  font-size: 11px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.terms a {
+  color: #cccccc;
+  text-decoration: none;
+}
+.terms a:hover {
+  text-decoration: underline;
+}

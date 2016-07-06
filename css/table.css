@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #000000;
+}
+table {
+  border-collapse: collapse;
+  background: #ffffff;
+}
+td {
+  border: 10px solid #000000;
+}
+/*COLORS*/
+tr:first-child td:last-child {
+  background-color: #fff065;
+  width: 164px;
+}
+tr:nth-child(2) td:last-child {
+  background-color: #fff065;
+}
+tr:nth-child(2) td:nth-child(2) {
+  background-color: #ff6041;
+}
+tr:nth-child(6) td:first-child {
+  background-color: #343434;
+}
+tr:nth-child(7) td:first-child {
+  background-color: #fff065;
+}
+tr:nth-child(7) td:last-child {
+  background-color: #084583;
+}
+tr:nth-child(8) td:nth-child(2) {
+  background-color: #343434;
+}
+/*SIZING*/
+tr:first-child td:first-child {
+  width: 115px;
+  height: 47px;
+}
+tr:first-child td:nth-child(2) {
+  width: 200px;
+}
+tr:nth-child(2) td:first-child {
+  width: 47px;
+  height: 130px;
+}
+tr:nth-child(2) td:nth-child(2) {
+  width: 267px;
+}
+tr:nth-child(2) td:last-child {
+  width: 164px;
+  height: 130px;
+}
+tr:nth-child(4) td:first-child {
+  height: 200px;
+}
+tr:nth-child(4) td:nth-child(2),
+tr:nth-child(4) td:last-child {
+  height: 129px;
+  width: 76px;
+}
+tr:nth-child(6) td:first-child {
+  width: 131px;
+}
+tr:nth-child(6) td:nth-child(2) {
+  height: 60px;
+  width: 128px;
+}
+tr:nth-child(6) td:last-child {
+  width: 162px;
+}
+tr:nth-child(7) td:first-child {
+  height: 135px;
+}
+tr:nth-child(7) td:nth-child(2) {
+  height: 57px;
+  width: 128px;
+}
+tr:nth-child(7) td:last-child {
+  height: 94px;
+  width: 162px;
+}
+tr:nth-child(8) td:first-child {
+  height: 69px;
+  width: 131px;
+}
+tr:nth-child(8) td:nth-child(2) {
+  height: 30px;
+  width: 128px;
+}
+tr:nth-child(9) td:first-child {
+  height: 30px;
+  width: 300px;
+}
+/*CENTERING*/
+.parent {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  white-space: nowrap;
+  text-align: center;
+  font-size: 0;
+}
+.parent::before {
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  content: '';
+}
+.picture {
+  display: inline-block;
+  white-space: normal;
+  vertical-align: middle;
+  text-align: left;
+}
