@@ -23,7 +23,7 @@ header {
   width: 100%;
   height: 36px;
   background: #074c89 url(../img/nav-bg.png) repeat-x;
-  color: #ffffff;
+  color: #fff;
 }
 ul {
   float: left;
@@ -36,13 +36,25 @@ nav {
   margin-left: 38%;
   min-width: 740px;
 }
+.menu > li {
+  width: 75px;
+}
+.menu > li:first-child {
+  width: 110px;
+}
+.menu > li:last-child {
+  width: 2px;
+}
 .menu > li > a {
   color: #60b5ed;
   text-decoration: none;
-  padding: 8px 13px;
+  padding: 10px 13px;
 }
 .menu > li > a:hover {
-  color: #ffffff;
+  color: #fff;
+  background: #4eabda;
+  font-weight: bold;
+  padding: 10px 12px 9.5px;
 }
 nav img {
   float: left;
@@ -50,32 +62,34 @@ nav img {
 .active {
   width: 70px;
   box-sizing: border-box;
-  color: #ffffff;
+  color: #fff;
   background: #4eabda;
   font-weight: bold;
   text-align: center;
 }
 .menu-separator {
-  padding: 2px 8px;
+  padding: 2px 9px;
 }
 .personal-menu-offers img {
   padding: 6px 10px 3px;
 }
 .personal-menu a {
-  color: #ffffff;
+  color: #fff;
 }
 .personal-menu-offers a {
   text-decoration: none;
-  padding-right: 5px;
 }
 .personal-menu-offers {
-  margin-right: 10px;
+  width: 145px;
 }
 .personal-menu-offers a:hover {
   text-decoration: underline;
+    display: block;
+    background: #3c8fce url(../img/nav-personal-bg.png) repeat-x;
+    height: 36px;
 }
 .personal-menu-login {
-  background: #3c8fce url(../img/nav-login-bg.png) no-repeat;
+  background: #3c8fce url(../img/nav-personal-bg.png) repeat-x;
   height: 36px;
   width: 191px;
   text-align: center;
@@ -115,13 +129,13 @@ main::before {
   text-align: center;
   background: rgba(0, 0, 0, 0.63);
   font-size: 24px;
-  color: #ffffff;
+  color: #fff;
 }
 .registration-block {
   margin: 2px 0 0 0;
   background: rgba(0, 0, 0, 0.63);
   font-size: 14px;
-  color: #ffffff;
+  color: #fff;
 }
 .registration-wrapper {
   margin: 0 auto;
@@ -177,7 +191,7 @@ fieldset input:focus {
   box-shadow: 0 0 5px 2px #5398db;
   border-bottom: 1px solid #77a9db;
 }
-.updates {
+#updates {
   margin: 3px 0 10px;
   color: #cccccc;
 }
@@ -187,13 +201,10 @@ input[type="submit"] {
   height: 35px;
   display: block;
   border: 0;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
   font-weight: bold;
   cursor: pointer;
-}
-.submit-button {
-  width: 149px;
   margin: 25px auto 20px;
 }
 .terms {

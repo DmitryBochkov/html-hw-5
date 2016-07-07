@@ -11,7 +11,7 @@
       <nav class="clearfix">
         <ul class="menu clearfix">
           <li><a href="#">Meu YouBike</a></li>
-          <li class="active">Vender</li>
+          <li><a href="#">Vender</a></li>
           <li><a href="#">Forum</a></li>
           <li><a href="#">Contato</a></li>
           <li><a href="#">Ajuda</a></li>
@@ -38,29 +38,17 @@
             </div>
             <form action="#" method="post">
               <fieldset>
-                <div class="first-name">
-                  <input type="text" name="first-name" placeholder="First Name">
-                </div>
-                <div class="last-name">
-                  <input type="text" name="last-name" placeholder="Last Name">
-                </div>
-                <div class="email">
-                  <input type="email" name="email" placeholder="Email Address">
-                </div>
-                <div class="password">
-                  <input type="password" name="password" placeholder="Choose Password">
-                </div>
-                <div class="password-confirm">
-                  <input type="password" name="password-confirm" placeholder="Password Confirm">
-                </div>
+                <input type="text" name="first-name" placeholder="First Name" required>
+                <input type="text" name="last-name" placeholder="Last Name">
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="password" name="password" placeholder="Choose Password" required>
+                <input type="password" name="password-confirm" placeholder="Password Confirm" required>
               </fieldset>
-              <div class="updates">
+              <label>
                 <input type="checkbox" id="updates">
-                <label for="updates">Send me Youbike updates and tips</label>
-              </div>
-              <div class="submit-button">
-                <input type="submit" value="Create my Account">
-              </div>
+                Send me Youbike updates and tips
+              </label>
+              <input type="submit" value="Create my Account">
             </form>
           </div>
           <div class="terms">
